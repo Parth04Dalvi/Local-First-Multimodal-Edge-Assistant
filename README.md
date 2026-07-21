@@ -2,6 +2,8 @@
 
 A low-latency, privacy-preserving C++ and ONNX Runtime application designed to execute speech recognition, local vector search, and LLM inference entirely on-device without cloud API dependencies.
 
+<img width="591" height="671" alt="image" src="https://github.com/user-attachments/assets/940fe69a-0c8e-4718-a572-e6e86061f710" />
+
 ---
 
 ## 🌟 Key Features
