@@ -1,0 +1,19 @@
+edge-assistant/
+├── CMakeLists.txt                # C++ Build configuration
+├── README.md                     # GitHub documentation
+├── scripts/
+│   └── quantize_model.py         # HuggingFace to ONNX/INT4 quantization pipeline
+├── src/
+│   ├── include/
+│   │   ├── audio_engine.hpp      # PortAudio/Whisper C++ header
+│   │   ├── engine.hpp            # Main ONNX inference wrapper header
+│   │   └── vector_store.hpp      # SQLite-VSS C++ header
+│   ├── audio_engine.cpp          # Low-latency mic capture & speech-to-text
+│   ├── engine.cpp                # Core ONNX execution context (LLM generation)
+│   ├── main.cpp                  # C++ CLI application entry point
+│   └── vector_store.cpp          # On-device embeddings & semantic search
+├── binding/
+│   └── pybind_wrapper.cpp        # Pybind11 / WASM bindings for Python/Web UI
+└── python_app/
+    ├── app.py                    # FastAPI/Streamlit UI bridge (optional GUI)
+    └── requirements.txt          # Python dependencies
